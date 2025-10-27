@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['как_20работает_20sysfshelper_0',['🧠 Как работает SysFSHelper',['../index.html#autotoc_md19',1,'']]],
-  ['класс_20tt_20sysfshelper_20tt_1',['Класс &lt;tt&gt;SysFSHelper&lt;/tt&gt;',['../index.html#autotoc_md28',1,'']]],
-  ['контакты_2',['👤 Контакты',['../index.html#autotoc_md43',1,'']]]
+  ['как_20работает_20sysfshelper_0',['🧠 Как работает SysFSHelper',['../index.html#autotoc_md21',1,'']]],
+  ['класс_20tt_20sysfshelper_20tt_1',['Класс &lt;tt&gt;SysFSHelper&lt;/tt&gt;',['../index.html#autotoc_md30',1,'']]],
+  ['контакты_2',['👤 Контакты',['../index.html#autotoc_md45',1,'']]]
 ];
