@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['pid_20tt_0',['&lt;tt&gt;find_by_id(const std::string &amp;vid, const std::string &amp;pid)&lt;/tt&gt;',['../index.html#autotoc_md59',1,'']]]
+  ['main_20api_0',['📚 Main API',['../index.html#autotoc_md57',1,'']]],
+  ['main_20functions_3a_1',['Main functions:',['../index.html#autotoc_md66',1,'']]],
+  ['module_2',['📘 fs_tools Module',['../index.html#autotoc_md65',1,'']]]
 ];
