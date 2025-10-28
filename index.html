@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="textblock"><p><a class="anchor" id="md_README"></a> <a href="https://github.com/iahve-space/fs-tools/releases"><img src="https://img.shields.io/github/v/release/iahve-space/fs-tools?include_prereleases&amp;label=release" alt="Release" class="inline"/></a> <img src="coverage.svg" alt="" style="pointer-events: none;" class="inline" title="Coverage"/>     [<img src="https://img.shields.io/github/license/iahve-space/protolib" alt="License" class="inline"/>](LICENSE) <a href="https://iahve-space.github.io/protolib/"><img src="https://github.com/iahve-space/fs-tools/actions/workflows/docs.yml/badge.svg" alt="Docs" style="pointer-events: none;" class="inline"/></a></p>
 <p><b>fs_tools</b> — это кроссплатформенная библиотека на C++17, предоставляющая набор POSIX-хелперов для работы с файловой системой и подсистемой <b>sysfs</b> в Linux. Она упрощает доступ к устройствам, каталогам и симлинкам без использования <code>&lt;filesystem&gt;</code> и включает класс <b>SysFSHelper</b> для поиска и анализа USB-устройств через sysfs.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md41"></a>
+<h1><a class="anchor" id="autotoc_md43"></a>
 🚀 Возможности</h1>
 <ul>
 <li>📂 Работа с POSIX-файловой системой (проверка существования, листинг, симлинки)</li>
@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <li>🧱 Полностью заголовочная реализация (header-only)</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md43"></a>
+<h1><a class="anchor" id="autotoc_md45"></a>
 🧩 Структура</h1>
 <p>Библиотека состоит из двух основных частей:</p>
 <ol type="1">
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <li><b>SysFSHelper.hpp</b> — класс для анализа структуры <code>/sys</code> и сопоставления USB-устройств с их файловыми узлами.</li>
 </ol>
 <hr  />
-<h1><a class="anchor" id="autotoc_md45"></a>
+<h1><a class="anchor" id="autotoc_md47"></a>
 🧠 Как работает SysFSHelper</h1>
 <p>Класс <code>SysFSHelper</code> использует виртуальную файловую систему <b>sysfs</b> (<code>/sys</code>) для построения связи между <code>/dev/...</code> и физическими устройствами.</p>
 <p>Пример цепочки для <code>/dev/ttyUSB0</code>:</p>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="line">/sys/bus/usb/devices/1-1/uevent  →  PRODUCT=1a86/7523/2600</div>
 </div><!-- fragment --><p>Библиотека поднимается вверх по дереву sysfs, пока не найдёт предка с <code>PRODUCT=vid/pid/...</code>, и возвращает пару <code>1a86:7523</code>.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md47"></a>
+<h1><a class="anchor" id="autotoc_md49"></a>
 💻 Пример использования</h1>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;SysFSHelper.hpp&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
@@ -144,9 +144,9 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="line">/dev/hidraw0 -&gt; 046d:c534 (hidraw)</div>
 <div class="line">/dev/video0  -&gt; 05a3:9331 (video4linux)</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md49"></a>
+<h1><a class="anchor" id="autotoc_md51"></a>
 📦 Установка</h1>
-<h2><a class="anchor" id="autotoc_md50"></a>
+<h2><a class="anchor" id="autotoc_md52"></a>
 CMake + FetchContent</h2>
 <div class="fragment"><div class="line">include(FetchContent)</div>
 <div class="line">FetchContent_Declare(</div>
@@ -157,27 +157,27 @@ CMake + FetchContent</h2>
 <div class="line">FetchContent_MakeAvailable(fs_tools)</div>
 <div class="line"> </div>
 <div class="line">target_link_libraries(your_target PRIVATE fs_tools)</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md51"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md53"></a>
 Conan</h2>
 <div class="fragment"><div class="line">conan install fs_tools/[&gt;=1.0.0]@</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md53"></a>
+<h1><a class="anchor" id="autotoc_md55"></a>
 📚 Основное API</h1>
-<h2><a class="anchor" id="autotoc_md54"></a>
+<h2><a class="anchor" id="autotoc_md56"></a>
 Класс &lt;tt&gt;SysFSHelper&lt;/tt&gt;</h2>
-<h3><a class="anchor" id="autotoc_md55"></a>
+<h3><a class="anchor" id="autotoc_md57"></a>
 &lt;tt&gt;list_functions()&lt;/tt&gt;</h3>
 <p>Возвращает список всех USB-функций, найденных в системе.</p>
-<h3><a class="anchor" id="autotoc_md56"></a>
+<h3><a class="anchor" id="autotoc_md58"></a>
 &lt;tt&gt;find(const std::string &amp;dev)&lt;/tt&gt;</h3>
 <p>Возвращает информацию о конкретном узле <code>/dev/...</code>.</p>
-<h3><a class="anchor" id="autotoc_md57"></a>
+<h3><a class="anchor" id="autotoc_md59"></a>
 &lt;tt&gt;find_by_id(const std::string &amp;vid, const std::string &amp;pid)&lt;/tt&gt;</h3>
 <p>Находит все устройства с заданными VID/PID.</p>
-<h3><a class="anchor" id="autotoc_md58"></a>
+<h3><a class="anchor" id="autotoc_md60"></a>
 &lt;tt&gt;list_ids()&lt;/tt&gt;</h3>
 <p>Возвращает все уникальные пары <code>(VID, PID)</code> найденных USB-устройств.</p>
-<h3><a class="anchor" id="autotoc_md59"></a>
+<h3><a class="anchor" id="autotoc_md61"></a>
 &lt;tt&gt;UsbFunction&lt;/tt&gt;</h3>
 <p>Структура с описанием найденного устройства:</p>
 <div class="fragment"><div class="line"><span class="keyword">struct </span>UsbFunction {</div>
@@ -189,10 +189,10 @@ Conan</h2>
 <div class="line">    std::string m_dev_path;   <span class="comment">// Полный путь /dev/...</span></div>
 <div class="line">};</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md61"></a>
+<h1><a class="anchor" id="autotoc_md63"></a>
 📘 Модуль fs_tools</h1>
 <p><code>fs_tools</code> — это вспомогательная часть библиотеки, реализующая базовые функции работы с POSIX-файловой системой без <code>&lt;filesystem&gt;</code>.</p>
-<h2><a class="anchor" id="autotoc_md62"></a>
+<h2><a class="anchor" id="autotoc_md64"></a>
 Основные функции:</h2>
 <ul>
 <li><code>path_exists(path)</code> — проверка существования</li>
@@ -205,7 +205,7 @@ Conan</h2>
 <li><code>readlink_once(path)</code> — чтение цели симлинка</li>
 <li><code>make_dir_once(path)</code> — создание каталога (аналог <code>mkdir -p</code>)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md63"></a>
+<h2><a class="anchor" id="autotoc_md65"></a>
 Пример использования</h2>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;fs_tools.hpp&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
@@ -222,7 +222,7 @@ Conan</h2>
 <div class="line">    }</div>
 <div class="line">}</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md65"></a>
+<h1><a class="anchor" id="autotoc_md67"></a>
 🧩 Требования</h1>
 <ul>
 <li>Linux с поддержкой <b>sysfs</b> (<code>/sys</code>)</li>
