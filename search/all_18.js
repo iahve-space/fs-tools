@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['usbfunction_20tt_0',['&lt;tt&gt;UsbFunction&lt;/tt&gt;',['../index.html#autotoc_md57',1,'']]]
+  ['usbfunction_20tt_0',['&lt;tt&gt;UsbFunction&lt;/tt&gt;',['../index.html#autotoc_md59',1,'']]]
 ];
