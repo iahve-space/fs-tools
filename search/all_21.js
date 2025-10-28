@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['работает_20sysfshelper_0',['🧠 Как работает SysFSHelper',['../index.html#autotoc_md37',1,'']]]
+  ['структура_0',['🧩 Структура',['../index.html#autotoc_md35',1,'']]]
 ];

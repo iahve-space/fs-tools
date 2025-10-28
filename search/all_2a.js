@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['📚_20основное_20api_0',['📚 Основное API',['../index.html#autotoc_md45',1,'']]]
+  ['🧠_20как_20работает_20sysfshelper_0',['🧠 Как работает SysFSHelper',['../index.html#autotoc_md37',1,'']]]
 ];

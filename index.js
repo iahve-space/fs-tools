@@ -21,7 +21,5 @@ var index =
       [ "Основные функции:", "index.html#autotoc_md54", null ],
       [ "Пример использования", "index.html#autotoc_md55", null ]
     ] ],
-    [ "🧩 Требования", "index.html#autotoc_md57", null ],
-    [ "📖 Лицензия", "index.html#autotoc_md59", null ],
-    [ "👤 Контакты", "index.html#autotoc_md61", null ]
+    [ "🧩 Требования", "index.html#autotoc_md57", null ]
 ];
