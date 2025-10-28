@@ -26,31 +26,34 @@ var NAVTREE =
 [
   [ "lacteApp", "index.html", [
     [ "fs_tools", "index.html", "index" ],
-    [ "<a href=\"https://github.com/iahve-space/fs-tools/compare/v1.0.6...v1.0.7\" >1.0.7</a> (2025-10-28)", "d4/d40/md_CHANGELOG.html", [
-      [ "<a href=\"https://github.com/iahve-space/fs-tools/compare/v1.0.5...v1.0.6\" >1.0.6</a> (2025-10-28)", "d4/d40/md_CHANGELOG.html#autotoc_md2", [
+    [ "<a href=\"https://github.com/iahve-space/fs-tools/compare/v1.0.7...v1.0.8\" >1.0.8</a> (2025-10-28)", "d4/d40/md_CHANGELOG.html", [
+      [ "<a href=\"https://github.com/iahve-space/fs-tools/compare/v1.0.6...v1.0.7\" >1.0.7</a> (2025-10-28)", "d4/d40/md_CHANGELOG.html#autotoc_md2", [
         [ "Bug Fixes", "d4/d40/md_CHANGELOG.html#autotoc_md1", null ],
         [ "Bug Fixes", "d4/d40/md_CHANGELOG.html#autotoc_md3", null ]
       ] ],
-      [ "<a href=\"https://github.com/iahve-space/fs-tools/compare/v1.0.4...v1.0.5\" >1.0.5</a> (2025-10-27)", "d4/d40/md_CHANGELOG.html#autotoc_md4", [
+      [ "<a href=\"https://github.com/iahve-space/fs-tools/compare/v1.0.5...v1.0.6\" >1.0.6</a> (2025-10-28)", "d4/d40/md_CHANGELOG.html#autotoc_md4", [
         [ "Bug Fixes", "d4/d40/md_CHANGELOG.html#autotoc_md5", null ]
       ] ],
-      [ "<a href=\"https://github.com/iahve-space/fs-tools/compare/v1.0.3...v1.0.4\" >1.0.4</a> (2025-10-27)", "d4/d40/md_CHANGELOG.html#autotoc_md6", [
+      [ "<a href=\"https://github.com/iahve-space/fs-tools/compare/v1.0.4...v1.0.5\" >1.0.5</a> (2025-10-27)", "d4/d40/md_CHANGELOG.html#autotoc_md6", [
         [ "Bug Fixes", "d4/d40/md_CHANGELOG.html#autotoc_md7", null ]
       ] ],
-      [ "<a href=\"https://github.com/iahve-space/fs-tools/compare/v1.0.2...v1.0.3\" >1.0.3</a> (2025-10-27)", "d4/d40/md_CHANGELOG.html#autotoc_md8", [
+      [ "<a href=\"https://github.com/iahve-space/fs-tools/compare/v1.0.3...v1.0.4\" >1.0.4</a> (2025-10-27)", "d4/d40/md_CHANGELOG.html#autotoc_md8", [
         [ "Bug Fixes", "d4/d40/md_CHANGELOG.html#autotoc_md9", null ]
       ] ],
-      [ "<a href=\"https://github.com/iahve-space/fs-tools/compare/v1.0.1...v1.0.2\" >1.0.2</a> (2025-10-27)", "d4/d40/md_CHANGELOG.html#autotoc_md10", [
+      [ "<a href=\"https://github.com/iahve-space/fs-tools/compare/v1.0.2...v1.0.3\" >1.0.3</a> (2025-10-27)", "d4/d40/md_CHANGELOG.html#autotoc_md10", [
         [ "Bug Fixes", "d4/d40/md_CHANGELOG.html#autotoc_md11", null ]
       ] ],
-      [ "<a href=\"https://github.com/iahve-space/fs-tools/compare/v1.0.0...v1.0.1\" >1.0.1</a> (2025-10-27)", "d4/d40/md_CHANGELOG.html#autotoc_md12", [
+      [ "<a href=\"https://github.com/iahve-space/fs-tools/compare/v1.0.1...v1.0.2\" >1.0.2</a> (2025-10-27)", "d4/d40/md_CHANGELOG.html#autotoc_md12", [
         [ "Bug Fixes", "d4/d40/md_CHANGELOG.html#autotoc_md13", null ]
       ] ],
-      [ "1.0.0 (2025-10-27)", "d4/d40/md_CHANGELOG.html#autotoc_md14", null ],
-      [ "<a href=\"https://gitlab.insitechdev.ru/comfort/embedded/libraries/fs_tools/compare/v1.0.0-dev.3...v1.0.0-dev.4\" >1.0.0-dev.4</a> (2025-10-27)", "d4/d40/md_CHANGELOG.html#autotoc_md17", null ],
-      [ "<a href=\"https://gitlab.insitechdev.ru/comfort/embedded/libraries/fs_tools/compare/v1.0.0-dev.2...v1.0.0-dev.3\" >1.0.0-dev.3</a> (2025-10-27)", "d4/d40/md_CHANGELOG.html#autotoc_md19", null ],
-      [ "<a href=\"https://gitlab.insitechdev.ru/comfort/embedded/libraries/fs_tools/compare/v1.0.0-dev.1...v1.0.0-dev.2\" >1.0.0-dev.2</a> (2025-10-26)", "d4/d40/md_CHANGELOG.html#autotoc_md21", null ],
-      [ "1.0.0-dev.1 (2025-10-26)", "d4/d40/md_CHANGELOG.html#autotoc_md23", null ]
+      [ "<a href=\"https://github.com/iahve-space/fs-tools/compare/v1.0.0...v1.0.1\" >1.0.1</a> (2025-10-27)", "d4/d40/md_CHANGELOG.html#autotoc_md14", [
+        [ "Bug Fixes", "d4/d40/md_CHANGELOG.html#autotoc_md15", null ]
+      ] ],
+      [ "1.0.0 (2025-10-27)", "d4/d40/md_CHANGELOG.html#autotoc_md16", null ],
+      [ "<a href=\"https://gitlab.insitechdev.ru/comfort/embedded/libraries/fs_tools/compare/v1.0.0-dev.3...v1.0.0-dev.4\" >1.0.0-dev.4</a> (2025-10-27)", "d4/d40/md_CHANGELOG.html#autotoc_md19", null ],
+      [ "<a href=\"https://gitlab.insitechdev.ru/comfort/embedded/libraries/fs_tools/compare/v1.0.0-dev.2...v1.0.0-dev.3\" >1.0.0-dev.3</a> (2025-10-27)", "d4/d40/md_CHANGELOG.html#autotoc_md21", null ],
+      [ "<a href=\"https://gitlab.insitechdev.ru/comfort/embedded/libraries/fs_tools/compare/v1.0.0-dev.1...v1.0.0-dev.2\" >1.0.0-dev.2</a> (2025-10-26)", "d4/d40/md_CHANGELOG.html#autotoc_md23", null ],
+      [ "1.0.0-dev.1 (2025-10-26)", "d4/d40/md_CHANGELOG.html#autotoc_md25", null ]
     ] ]
   ] ]
 ];

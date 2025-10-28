@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['href_20https_3a_20github_20com_20iahve_20space_20fs_20tools_20compare_20v1_200_206_20v1_200_207_201_200_207_20a_202025_2010_2028_0',['&lt;a href=&quot;https://github.com/iahve-space/fs-tools/compare/v1.0.6...v1.0.7&quot; &gt;1.0.7&lt;/a&gt; (2025-10-28)',['../d4/d40/md_CHANGELOG.html',1,'']]],
-  ['https_3a_20github_20com_20iahve_20space_20fs_20tools_20compare_20v1_200_206_20v1_200_207_201_200_207_20a_202025_2010_2028_1',['&lt;a href=&quot;https://github.com/iahve-space/fs-tools/compare/v1.0.6...v1.0.7&quot; &gt;1.0.7&lt;/a&gt; (2025-10-28)',['../d4/d40/md_CHANGELOG.html',1,'']]]
+  ['href_20https_3a_20github_20com_20iahve_20space_20fs_20tools_20compare_20v1_200_207_20v1_200_208_201_200_208_20a_202025_2010_2028_0',['&lt;a href=&quot;https://github.com/iahve-space/fs-tools/compare/v1.0.7...v1.0.8&quot; &gt;1.0.8&lt;/a&gt; (2025-10-28)',['../d4/d40/md_CHANGELOG.html',1,'']]],
+  ['https_3a_20github_20com_20iahve_20space_20fs_20tools_20compare_20v1_200_207_20v1_200_208_201_200_208_20a_202025_2010_2028_1',['&lt;a href=&quot;https://github.com/iahve-space/fs-tools/compare/v1.0.7...v1.0.8&quot; &gt;1.0.8&lt;/a&gt; (2025-10-28)',['../d4/d40/md_CHANGELOG.html',1,'']]]
 ];
