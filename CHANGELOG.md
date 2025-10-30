@@ -1,3 +1,10 @@
+# 1.0.0 (2025-10-30)
+
+
+### Features
+
+* **init:** initial ([828a77f](https://github.com/iahve-space/fs-tools/commit/828a77f00870914fa7745800aa4d57a6071d275a))
+
 ## [1.0.18](https://github.com/iahve-space/fs-tools/compare/v1.0.17...v1.0.18) (2025-10-30)
 
 
