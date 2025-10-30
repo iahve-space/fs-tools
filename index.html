@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="textblock"><p><a class="anchor" id="md_README"></a> <a href="https://github.com/iahve-space/fs-tools/releases"><img src="https://img.shields.io/github/v/release/iahve-space/fs-tools?include_prereleases&amp;label=release" alt="Release" class="inline"/></a> <img src="coverage.svg" alt="" style="pointer-events: none;" class="inline" title="Coverage"/>     [<img src="https://img.shields.io/github/license/iahve-space/protolib" alt="License" class="inline"/>](LICENSE) <a href="https://iahve-space.github.io/protolib/"><img src="https://github.com/iahve-space/fs-tools/actions/workflows/docs.yml/badge.svg" alt="Docs" style="pointer-events: none;" class="inline"/></a></p>
 <p><b>fs_tools</b> is a cross-platform C++17 library that provides a set of POSIX helpers for working with the filesystem and the <b>sysfs</b> subsystem on Linux. It simplifies access to devices, directories, and symlinks without using <code>&lt;filesystem&gt;</code> and includes the <b>SysFSHelper</b> class for discovering and analyzing USB devices via sysfs.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md47"></a>
+<h1><a class="anchor" id="autotoc_md49"></a>
 🚀 Features</h1>
 <ul>
 <li>📂 Working with POSIX filesystem (existence checks, listing, symlinks)</li>
@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <li>🧱 Fully header-only implementation</li>
 </ul>
 <hr  />
-<h1><a class="anchor" id="autotoc_md49"></a>
+<h1><a class="anchor" id="autotoc_md51"></a>
 🧩 Structure</h1>
 <p>The library consists of two main parts:</p>
 <ol type="1">
@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <li><b>SysFSHelper.hpp</b> — a class for analyzing the <code>/sys</code> structure and mapping USB devices to their device nodes.</li>
 </ol>
 <hr  />
-<h1><a class="anchor" id="autotoc_md51"></a>
+<h1><a class="anchor" id="autotoc_md53"></a>
 🧠 How SysFSHelper Works</h1>
 <p>The <code>SysFSHelper</code> class uses the virtual filesystem <b>sysfs</b> (<code>/sys</code>) to establish a connection between <code>/dev/...</code> and physical devices.</p>
 <p>Example chain for <code>/dev/ttyUSB0</code>:</p>
@@ -125,7 +125,7 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="line">/sys/bus/usb/devices/1-1/uevent  →  PRODUCT=1a86/7523/2600</div>
 </div><!-- fragment --><p>The library traverses up the sysfs tree until it finds an ancestor with <code>PRODUCT=vid/pid/...</code> and returns the pair <code>1a86:7523</code>.</p>
 <hr  />
-<h1><a class="anchor" id="autotoc_md53"></a>
+<h1><a class="anchor" id="autotoc_md55"></a>
 💻 Usage Example</h1>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;SysFSHelper.hpp&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
@@ -144,9 +144,9 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="line">/dev/hidraw0 -&gt; 046d:c534 (hidraw)</div>
 <div class="line">/dev/video0  -&gt; 05a3:9331 (video4linux)</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md55"></a>
+<h1><a class="anchor" id="autotoc_md57"></a>
 📦 Installation</h1>
-<h2><a class="anchor" id="autotoc_md56"></a>
+<h2><a class="anchor" id="autotoc_md58"></a>
 CMake + FetchContent</h2>
 <div class="fragment"><div class="line">include(FetchContent)</div>
 <div class="line">FetchContent_Declare(</div>
@@ -158,27 +158,27 @@ CMake + FetchContent</h2>
 <div class="line">FetchContent_MakeAvailable(fs_tools)</div>
 <div class="line"> </div>
 <div class="line">target_link_libraries(your_target PRIVATE fs_tools)</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md57"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md59"></a>
 Conan</h2>
 <div class="fragment"><div class="line">conan install fs_tools/[&gt;=1.0.0]@</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md59"></a>
+<h1><a class="anchor" id="autotoc_md61"></a>
 📚 Main API</h1>
-<h2><a class="anchor" id="autotoc_md60"></a>
+<h2><a class="anchor" id="autotoc_md62"></a>
 Class &lt;tt&gt;SysFSHelper&lt;/tt&gt;</h2>
-<h3><a class="anchor" id="autotoc_md61"></a>
+<h3><a class="anchor" id="autotoc_md63"></a>
 &lt;tt&gt;list_functions()&lt;/tt&gt;</h3>
 <p>Returns a list of all USB functions found on the system.</p>
-<h3><a class="anchor" id="autotoc_md62"></a>
+<h3><a class="anchor" id="autotoc_md64"></a>
 &lt;tt&gt;find(const std::string &amp;dev)&lt;/tt&gt;</h3>
 <p>Returns information about a specific <code>/dev/...</code> node.</p>
-<h3><a class="anchor" id="autotoc_md63"></a>
+<h3><a class="anchor" id="autotoc_md65"></a>
 &lt;tt&gt;find_by_id(const std::string &amp;vid, const std::string &amp;pid)&lt;/tt&gt;</h3>
 <p>Finds all devices with the specified VID/PID.</p>
-<h3><a class="anchor" id="autotoc_md64"></a>
+<h3><a class="anchor" id="autotoc_md66"></a>
 &lt;tt&gt;list_ids()&lt;/tt&gt;</h3>
 <p>Returns all unique <code>(VID, PID)</code> pairs of found USB devices.</p>
-<h3><a class="anchor" id="autotoc_md65"></a>
+<h3><a class="anchor" id="autotoc_md67"></a>
 &lt;tt&gt;UsbFunction&lt;/tt&gt;</h3>
 <p>Structure describing a found device:</p>
 <div class="fragment"><div class="line"><span class="keyword">struct </span>UsbFunction {</div>
@@ -190,10 +190,10 @@ Class &lt;tt&gt;SysFSHelper&lt;/tt&gt;</h2>
 <div class="line">    std::string m_dev_path;   <span class="comment">// Full path /dev/...</span></div>
 <div class="line">};</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md67"></a>
+<h1><a class="anchor" id="autotoc_md69"></a>
 📘 fs_tools Module</h1>
 <p><code>fs_tools</code> is a helper part of the library implementing basic POSIX filesystem functions without <code>&lt;filesystem&gt;</code>.</p>
-<h2><a class="anchor" id="autotoc_md68"></a>
+<h2><a class="anchor" id="autotoc_md70"></a>
 Main functions:</h2>
 <ul>
 <li><code>path_exists(path)</code> — check existence</li>
@@ -206,7 +206,7 @@ Main functions:</h2>
 <li><code>readlink_once(path)</code> — read symlink target</li>
 <li><code>make_dir_once(path)</code> — create directory (like <code>mkdir -p</code>)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md69"></a>
+<h2><a class="anchor" id="autotoc_md71"></a>
 Usage example</h2>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &quot;fs_tools.hpp&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;iostream&gt;</span></div>
@@ -223,7 +223,7 @@ Usage example</h2>
 <div class="line">    }</div>
 <div class="line">}</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md71"></a>
+<h1><a class="anchor" id="autotoc_md73"></a>
 🧩 Requirements</h1>
 <ul>
 <li>Linux with <b>sysfs</b> support (<code>/sys</code>)</li>
